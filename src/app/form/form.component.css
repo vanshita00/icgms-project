@@ -1,0 +1,18 @@
+.backgroundImg{
+    background-image: url("https://dev.icgms.sharajman.com/assets/images/background/login-bg.png");
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: contain;
+    background-color: #bde8ef;
+  }
+  .loginBtn{
+    padding: 15px  ;
+    border-radius: 30px;
+    background-color: #00728c;
+    color: white;
+    font-weight: 600;
+  
+  }
+  

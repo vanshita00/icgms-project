@@ -1,0 +1,55 @@
+<div class="backgroundImg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 p-3 rounded-5 bg-white me-auto my-5">
+        <div class="col-8 m-auto my-5">
+          <img
+            src="https://dev.icgms.sharajman.com/assets/images/logos/logo.png"
+            class="m-auto my-4"
+            style="height: 40px"
+          />
+
+          <h2 class="fw-bold my-2">
+            Welcome to ICGMS
+            <br class="d-none d-sm-block" />
+            Insurance Portal
+          </h2>
+          <div class="fw-semibold my-3">Please enter details below to login.</div>
+          <div>
+            <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+              <div class="row row-gap-3 my-3">
+                <div class="mb-3 col-12 col-sm-6">
+                  <label for="editName" class="form-label">Email</label>
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    formControlName="email"
+                    class="form-control"
+                    id="editName"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3 col-12 col-sm-6">
+                  <label for="password" class="form-label">Password</label>
+                  <input
+                    required
+                    type="password"
+                    name="password"
+                    formControlName="password"
+                    class="form-control"
+                    id="password"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="btn w-100 loginBtn my-4">Log in</button>
+            </form>
+            <div *ngIf="showError" class="text-danger">
+              {{ errorMessage }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

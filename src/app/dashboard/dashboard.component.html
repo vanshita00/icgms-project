@@ -1,0 +1,31 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://dev.icgms.sharajman.com/assets/images/logos/logo.png" alt="Logo" style="height: 32px; margin-right: 10px;" />
+      </a>
+      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://dev.icgms.sharajman.com/assets/images/users/user4.jpg" alt="User Profile" class="rounded-circle" style="height: 32px; margin-right: 10px;" />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" (click)="getUserProfile()">My Profile</a></li>
+              <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </nav>
+  <div *ngIf="showProfile" class="profile-section mt-4" style="margin-left: 40px;">
+    <h4>Personal Information</h4>
+    <p><strong>First Name:</strong> {{ userData?.first_name }}</p>
+    <p><strong>Last Name:</strong> {{ userData?.last_name }}</p>
+    <h4>Contact Information</h4>
+    <p><strong>Email:</strong> {{ userData?.email }}</p>
+    <p><strong>Contact Number:</strong> {{ userData?.contact_number }}</p>
+    <h4>Role Information</h4>
+    <p><strong>User Type:</strong> {{ userData?.user_type }}</p>
+    <p><strong>Role Type:</strong> {{ userData?.role_type }}</p>
+  </div>

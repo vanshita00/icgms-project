@@ -1,0 +1,99 @@
+.nav-link[aria-expanded]::after {
+    display: none !important;
+  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 10px 20px;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #333;
+}
+.navbar-brand img {
+  height: 32px;
+  margin-right: 10px;
+}
+.navbar .nav-item .nav-link img {
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.navbar .dropdown-menu {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+.dropdown-item {
+  padding: 10px;
+  font-size: 14px;
+}
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+.profile-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin-top: 20px;
+}
+.profile-section h4 {
+  font-size: 18px;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.profile-section p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.profile-section p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for tables or card layout */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 16px;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+}
+
+table td {
+  background-color: #f9f9f9;
+}
+@media (max-width: 768px) {
+  .profile-section {
+      width: 95%;
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+
+  .navbar-brand img,
+  .navbar .nav-item .nav-link img {
+      height: 24px;
+  }
+}
+
+  
